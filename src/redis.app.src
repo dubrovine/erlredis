@@ -1,0 +1,16 @@
+{application, redis,
+ [{description, "Redis client with support single node, cluster and sentinel"},
+  {vsn, "1.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    erlpool,
+    eredis,
+    lager
+   ]},
+  {env,[]},
+  {modules, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
