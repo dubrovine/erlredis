@@ -42,7 +42,7 @@ ok = redis_lua:load_scripts(code:priv_dir(?APP_NAME) ++ "/lua/").
 {ok, <<"val">>} = redis_lua:q(pool1, lua_file_name, LuaParams).
 ```
 
-## Redis Setninel
+## Redis Sentinel
 ```erlang
 % start
 {ok, Pid} = redis:start_sentinel(PoolSize, InitHosts, MasterName, DataBase, Password).
@@ -90,5 +90,4 @@ ok = redis_lua:load_scripts(code:priv_dir(?APP_NAME) ++ "/lua/").
 % query lua with poolName
 {ok, <<"val">>} = redis_lua:q(pool1, lua_file_name, LuaParams).
 ```
-# erlredis
 # erlredis
