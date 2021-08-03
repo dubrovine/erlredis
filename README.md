@@ -1,4 +1,4 @@
-# redis
+# erlredis
 
 Redis client over `eredis` and `erlpool`.
 
