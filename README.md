@@ -1,4 +1,4 @@
-# erlredis
+# redis
 
 Redis client over `eredis` and `erlpool`.
 
@@ -90,4 +90,4 @@ ok = redis_lua:load_scripts(code:priv_dir(?APP_NAME) ++ "/lua/").
 % query lua with poolName
 {ok, <<"val">>} = redis_lua:q(pool1, lua_file_name, LuaParams).
 ```
-# erlredis
+# redis
